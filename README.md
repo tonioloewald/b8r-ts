@@ -11,5 +11,8 @@ and components.
 - works perfectly
 
 ## To Do
+- port unit tests
 - try to eliminate all tsc 'strict' violations
 - eliminate as many `// @ts-ignore`s as possible
+- port `lib/test.js`
+- port components
