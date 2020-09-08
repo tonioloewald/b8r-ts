@@ -1,7 +1,7 @@
 {
   "name": "b8r-ts",
   "version": "1.0.0",
-  "description": "",
+  "description": "a general-purpose lightweight framework for front-end development",
   "main": "index.js",
   "scripts": {
     "localhost": "node ./node_modules/http-server/bin/http-server .",
@@ -10,8 +10,8 @@
     "uglify": "npx uglifyjs ./dist/b8r.js -c -o ./dist/b8r.min.js --source-map",
     "build": "npm run tsc && npm run rollup && npm run uglify"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["typescript", "javascript", "front-end"],
+  "author": "Tonio Loewald",
   "license": "ISC",
   "devDependencies": {
     "http-server": "^0.12.3",
