@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>hello world</title>
+</head>
+<body>
+  <h1 data-bind="text=app.message"></h1>
+  <input data-bind="value=app.message">
+  <button data-event="click:app.speak">Speak</button>
+  <script type="module">
+    // you can also use ../b8r/dist/b8r.min.mjs (minified)
+    // or ../b8r/source/b8r.js (source code)
+    import b8r from './dist/b8r.js'
+
+    window.b8r = b8r // so we can play with it in console
+
+    b8r.register('app', {
+      message: 'hello world',
+      speak() {
+        alert(b8r.get('app.message'))
+      }
+    })
+  </script>
+</body>
+</html>
